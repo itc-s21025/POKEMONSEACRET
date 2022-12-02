@@ -94,12 +94,4 @@
         app:layout_constraintStart_toEndOf="@+id/Dai7"
         app:layout_constraintTop_toTopOf="@+id/Dai7" />
 
-    <Button
-        android:id="@+id/Dai9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:text="@string/Dai9"
-        app:layout_constraintStart_toEndOf="@+id/Dai8"
-        app:layout_constraintTop_toTopOf="@+id/Dai8" />
 </androidx.constraintlayout.widget.ConstraintLayout>

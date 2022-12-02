@@ -139,21 +139,6 @@ class QuizDisplayFragment : Fragment() {
         }
     }
 
-    private fun Pokequiz(args: Int, args2: Int, args3: Int, tmp: Int) {
-        lifecycleScope.launch {
-            val info = getPokeInfo(args)
-            val info2 = getPokeInfo(args2)
-            val info3 = getPokeInfo(args3)
-            val info4 = getPokeInfo(tmp)
-            val Array = mutableListOf(info.name, info2.name, info3.name, info4.name)
-            Array.shuffle()
-            binding.answer1.text = getString(R.string.answer1, Array[0])
-            binding.answer2.text = getString(R.string.answer1, Array[1])
-            binding.answer3.text = getString(R.string.answer1, Array[2])
-            binding.answer4.text = getString(R.string.answer1, Array[3])
-        }
-    }
-
     @Suppress("BlockingMethodInNonBlockingContext")
     @WorkerThread
     private suspend fun getPokeInfo(random: Int): PokemonResponce {
@@ -194,12 +179,10 @@ class QuizDisplayFragment : Fragment() {
             7 -> {
                 (722..809).shuffled().first()
             }
-            8 -> {
+            else -> {
                 (810..905).shuffled().first()
             }
-            else -> {
-                (905..950).shuffled().first()
-            }
+
         }
         return args
     }

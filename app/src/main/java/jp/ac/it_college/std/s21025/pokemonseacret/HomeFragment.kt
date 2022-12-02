@@ -1,5 +1,7 @@
 package jp.ac.it_college.std.s21025.pokemonseacret
 
+import android.graphics.Color
+import android.graphics.PorterDuff
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -18,7 +20,6 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
-
 
         binding.nextbtn.setOnClickListener {
             Navigation.findNavController(it).navigate(

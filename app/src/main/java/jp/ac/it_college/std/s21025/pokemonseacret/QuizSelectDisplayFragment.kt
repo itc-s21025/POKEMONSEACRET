@@ -82,13 +82,6 @@ class QuizSelectDisplayFragment : Fragment() {
             )
         }
 
-        binding.Dai9.setOnClickListener {
-            Navigation.findNavController(it).navigate(
-                QuizSelectDisplayFragmentDirections.actionQuizSelectDisplayFragmentToQuizDisplayFragment(9).apply {
-
-                }
-            )
-        }
         return binding.root
     }
 
