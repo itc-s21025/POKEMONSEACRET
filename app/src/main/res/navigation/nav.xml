@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="jp.ac.it_college.std.s21025.pokemonseacret.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_homeFragment_to_quizSelectDisplayFragment"
+            app:destination="@id/quizSelectDisplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizSelectDisplayFragment"
+        android:name="jp.ac.it_college.std.s21025.pokemonseacret.QuizSelectDisplayFragment"
+        android:label="fragment_quiz_select_display"
+        tools:layout="@layout/fragment_quiz_select_display" >
+        <action
+            android:id="@+id/action_quizSelectDisplayFragment_to_quizDisplayFragment"
+            app:destination="@id/quizDisplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizDisplayFragment"
+        android:name="jp.ac.it_college.std.s21025.pokemonseacret.QuizDisplayFragment"
+        android:label="fragment_quiz_display"
+        tools:layout="@layout/fragment_quiz_display" >
+        <argument
+            android:name="a"
+            app:argType="integer" />
+        <argument
+            android:name="qCount"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="score"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_quizDisplayFragment_to_resultDisplayFragment"
+            app:destination="@id/resultDisplayFragment" />
+        <action
+            android:id="@+id/action_quizDisplayFragment_self2"
+            app:destination="@id/quizDisplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultDisplayFragment"
+        android:name="jp.ac.it_college.std.s21025.pokemonseacret.ResultDisplayFragment"
+        android:label="fragment_result_display"
+        tools:layout="@layout/fragment_result_display">
+        <argument
+            android:name="score"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_resultDisplayFragment_to_quizSelectDisplayFragment"
+            app:destination="@id/quizSelectDisplayFragment" />
+    </fragment>
+
+</navigation>

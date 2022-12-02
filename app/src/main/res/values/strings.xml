@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">POKEMONSEACRET</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Ttiel">ポケモンシークレットクイズ</string>
+    <string name="next">問題選択</string>
+    <string name="jenerationtitle">世代を選択してください</string>
+    <string name="Dai1">第１世代</string>
+    <string name="Dai2">第２世代</string>
+    <string name="Dai3">第３世代</string>
+    <string name="Dai4">第４世代</string>
+    <string name="Dai5">第５世代</string>
+    <string name="Dai6">第６世代</string>
+    <string name="Dai7">第７世代</string>
+    <string name="Dai8">第８世代</string>
+    <string name="Dai9">第９世代</string>
+    <string name="answer1">%1$s</string>
+    <string name="counter">%ds問目</string>
+    <string name="enpty">%d</string>
+    <string name="result">正解数</string>
+    <string name="returndisplay">世代選択画面に戻る</string>
+    <string name="count">%d問目</string>
+    <string name="miss">不正解</string>
+    <string name="ok">正解</string>
+    <string name="timer">残り%d秒</string>
+</resources>
